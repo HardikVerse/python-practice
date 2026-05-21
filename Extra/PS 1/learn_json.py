@@ -2,8 +2,8 @@ import json
 
 data = []
 
-def dumper(x, mode):
-    data.append(x)
+def dumper(dict_name, mode):
+    data.append(dict_name)
     with open("person.json", mode) as file:
         json.dump(data, file, indent= 4 )
 
